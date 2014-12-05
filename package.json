@@ -1,0 +1,19 @@
+{
+  "name": "enb-static-versions",
+  "version": "0.0.1",
+  "description": "Enb techs for static (css/js) versioning",
+  "keywords": [
+    "static",
+    "versions",
+    "css",
+    "js"
+  ],
+  "author": {
+    "name": "Vitaly Ostanin",
+    "email": "ostanin@yamoney.ru"
+  },
+  "dependencies": {
+    "vow": "~0.3.9",
+    "vow-fs": "~0.2.2"
+  }
+}
