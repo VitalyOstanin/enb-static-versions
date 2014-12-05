@@ -6,9 +6,15 @@
 ### Подключение в сборку
 
 ```js
-require('enb-static-versions/techs/static-versions'), {
-	sources: [ '_?.css', '_?.ie9.css', '_?.ie8.css', '_?.ie7.css', '_?.ie6.css', '_?.ru.js', '_?.en.js' ]
-}
+nodeConfig.addTechs([
+	[ require('enb-static-versions/techs/static-versions'), {
+		sources: [ '_?.css', '_?.ie9.css', '_?.ie8.css', '_?.ie7.css', '_?.ie6.css', '_?.ru.js', '_?.en.js' ]
+	} ]
+]);
+
+nodeConfig.addTargets([
+	'?.static-versions.json',
+]);
 ```
 
 Технология создаёт файл с расширением 'static-versions.json', где лежит объект с именами исходных файлов и хешами этих
